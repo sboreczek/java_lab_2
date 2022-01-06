@@ -27,7 +27,39 @@ public class Main {
 
     }
 
+    public static void zad2(){
 
+        /* Switch case często używany jest z pętlą, gdzie case-y działają jak else if() */
+        String tekst = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
+        int[] tablica = {0, 0, 0, 0, 0, 0};
+        /* toCharArray() - metoda zamienia String na tablicę char[] */
+        for (char zmiennaChar : tekst.toCharArray()) {
+            switch (zmiennaChar) {
+                case 'o':
+                    ++tablica[0];
+                    break;
+                case 'p':
+                    ++tablica[1];
+                    break;
+                case 'x':
+                    ++tablica[2];
+                    break;
+                case 'z':
+                    ++tablica[3];
+                    break;
+                case 'q':
+                    ++tablica[4];
+                    break;
+                default:
+                    ++tablica[5];
+                    break;
+            }
+        }
+        System.out.printf("\nLitera występuje\no: %d - razy\np: %d - razy\nx: %d - razy\nz: %d - razy\nq: %d - razy",
+                tablica[0], tablica[1], tablica[2], tablica[3], tablica[4]);
+        System.out.println("\nLiczba pozostałych liter: " + tablica[5]);
+
+    }
 
 
 
@@ -35,6 +67,7 @@ public class Main {
     public static void main(String[] args) {
 
         zad1();
+        zad2();
         /* ćwiczenie 3 switch case */
 
         /* zad.1 napisać program który przyjmuje jedną liczbę od użytkownika z klawiatury
