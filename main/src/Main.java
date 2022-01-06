@@ -37,16 +37,33 @@ public class Main {
         }
     }
 
-    public static void zad3(){
 
+    public static void zad3() {
+        int i = 0;
+        while (true){
+
+            if(i == 100)
+                break;
+
+            else{
+
+                i++;
+                System.out.println(i);
+
+            }
+        }
+
+        //Pętla while(false) powoduje błąd kompilacji ponieważ instrukcje w niej zawarte nigdy nie zostaną wykonane ze względu na niemożliwość spełnienia warunku
 
 
     }
 
     public static void main(String[] args) {
-
+        zad1();
         zad2();
+        zad3();
 
     }
+
 
 }
