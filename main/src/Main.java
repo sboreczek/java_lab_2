@@ -29,10 +29,10 @@ public class Main {
 
     public static void zad2(){
 
-        /* Switch case często używany jest z pętlą, gdzie case-y działają jak else if() */
+
         String tekst = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
         int[] tablica = {0, 0, 0, 0, 0, 0};
-        /* toCharArray() - metoda zamienia String na tablicę char[] */
+
         for (char zmiennaChar : tekst.toCharArray()) {
             switch (zmiennaChar) {
                 case 'o':
