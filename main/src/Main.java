@@ -51,6 +51,9 @@ public class Main {
         Collections.sort(lista1, Collections.reverseOrder());
         wypisanie(lista1);
 
+        Set<Integer> liczba = new TreeSet<>();
+        wypisanieSet(liczba);
+
         /* ćw_6 Listy */
 
         /* zad.1 a) Napisać program który stworzy listę ArrayList<String> (lista tablicowa),
