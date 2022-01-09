@@ -51,7 +51,7 @@ public class Main {
         Collections.sort(lista1, Collections.reverseOrder());
         wypisanie(lista1);
 
-        Set<Integer> liczba = new TreeSet<>();
+        Set<Integer> liczba = liczby();
         wypisanieSet(liczba);
 
         /* ćw_6 Listy */
