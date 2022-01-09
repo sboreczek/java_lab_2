@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -18,7 +19,8 @@ public class Main {
         }
     }
 
-    public static String[] tekst(String x){
+    public static String[] tekst(){
+        String x;
         String[] tab1 = new String[6];
         Scanner skaner = new Scanner(System.in);
 
@@ -30,17 +32,48 @@ public class Main {
     }
 
     public static void wypisanieString(String[] tab) {
-        for (int x : tab) {
-            System.out.print(x + " ");
+        String x;
+        for(int i = 5; i >=0; i--){
+            x = tab[i];
+            System.out.println(x);
         }
     }
 
+    public static void jeden(String imie){
+        System.out.println(imie);
+    }
+    public static void jeden(String imie,String nazwisko){
+        System.out.println(imie + " " + nazwisko);
+    }
+    public static void jeden(String imie,String nazwisko,int wiek){
+        System.out.println(imie + " " + nazwisko + " " + wiek);
+    }
+
+    public static int suma(int x,int y){
+
+        int suma = x + y;
+        return suma;
+    }
+
+    public static int suma(int x,int y, int z){
+
+        int suma = x + y + z;
+        return suma;
+    }
     public static void main(String[] args) {
 
         int tab[] = wypelnienie(20);
         wypisanie(tab);
 
-        String tab1[] = wypisanieString();
+        String tab1[] = tekst();
+        wypisanieString(tab1);
+
+        jeden("Szymon","Nowak",32);
+
+        int zmiennaA = suma(20,25);
+        int zmiennaB = suma(24,66,12);
+        System.out.println("Wynik: " + suma(23,24) + suma(12,13,14));
+
     /* zad.1
         a) stworzyć tablicę typu int[20],
         b) napisać metodę która będzie uzupełniała tablicę wartościami od 40 do 21,
