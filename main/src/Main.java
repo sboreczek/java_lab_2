@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -22,6 +20,26 @@ public class Main {
         }
     }
 
+    public static Set<Integer> liczby(){
+        Scanner skan = new Scanner(System.in);
+        Set<Integer> liczba = new TreeSet<>();
+        int x = 0;
+        while(x < 5){
+            liczba.add(skan.nextInt());
+            x++;
+        }
+        return liczba;
+
+    }
+
+    public static void wypisanieSet(Set<Integer> liczby) {
+
+        System.out.println("liczby: " + liczby);
+
+        for (int x : liczby) {
+            System.out.print(x + ", ");
+        }
+    }
 
     public static void main(String[] args) {
         ArrayList<String> lista1 = zad1();
